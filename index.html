@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalToolsPro - Your All-in-One File Solution</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1d4ed8;
+            --background: #f8fafc;
+            --text-color: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        .header {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 1rem;
+            background: linear-gradient(135deg, #f0f4ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        /* Tools Grid */
+        .tools-grid {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tool-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* Category Sections */
+        .category-section {
+            margin: 4rem 0;
+            padding: 2rem 1rem;
+        }
+
+        .category-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background: white;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Utilities */
+        .button {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+
+        .button:hover {
+            background: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">DigitalToolsPro</a>
+            <div class="nav-links">
+                <a href="#tools" class="button">All Tools</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Transform Your Files with<br>All-in-One Digital Solutions</h1>
+        <p class="text-muted">Convert, compress, edit, and enhance images & PDFs effortlessly</p>
+    </section>
+
+    <main class="container">
+        <!-- Image Tools Section -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">🖼️ Image Tools</h2>
+                <p>Enhance and optimize your images</p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🖼️</div>
+                    <h3>Image Compressor</h3>
+                    <p>Reduce image size without quality loss</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">📸</div>
+                    <h3>Image Converter</h3>
+                    <p>Convert between JPG, PNG, WEBP formats</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🖌️</div>
+                    <h3>Image Editor</h3>
+                    <p>Crop, resize, and enhance images</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDF Tools Section -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2 class="category-title">📄 PDF Tools</h2>
+                <p>Manage and optimize PDF documents</p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">📄</div>
+                    <h3>PDF Compressor</h3>
+                    <p>Reduce PDF file size efficiently</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🔄</div>
+                    <h3>PDF Converter</h3>
+                    <p>Convert PDF to Word, Excel, Images</p>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🔒</div>
+                    <h3>PDF Security</h3>
+                    <p>Add passwords and permissions</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h4>Fast Processing</h4>
+                <p>Quick file operations with cloud acceleration</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h4>Secure Handling</h4>
+                <p>Files deleted automatically after processing</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h4>High Quality</h4>
+                <p>Maintain file integrity during operations</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 DigitalToolsPro. All rights reserved.</p>
+        <div class="footer-links" style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 1rem;">Privacy Policy</a>
+            <a href="#" style="color: white; margin: 0 1rem;">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+</html>
